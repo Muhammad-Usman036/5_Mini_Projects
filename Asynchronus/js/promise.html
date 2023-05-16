@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>advance js</title>
+
+    <script>
+      function prom(a, b) {
+        return new Promise(function (resolve, reject) {
+          console.log("wait data is fetching");
+          var c = a / b;
+          setTimeout(() => {
+            if ((a, b)) {
+              resolve(`i am successfull. your answer: ${c}`);
+            } else {
+              reject("i am failed.");
+            }
+          }, 3000);
+        });
+      }
+
+      //
+
+      prom(5, 2)
+        .then((value) => {
+          console.log(value);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    </script>
+  </head>
+
+  <body></body>
+</html>
+
+Promise - JavaScript - MDN Web Docs
